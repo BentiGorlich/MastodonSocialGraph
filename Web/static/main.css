@@ -1,0 +1,187 @@
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bs-body-color: #000000;
+        --bs-body-bg: #e7deff;
+        --bs-border-color: #ced4da;
+        --bs-primary: #595aff;
+        --bs-secondary-color: gray;
+        --bs-secondary-bg: #fff;
+
+        --mention-color: #7b7cff;
+        --account-link-color: #7255ff;
+        --verified-bg-color: #5ab55a;
+        --verified-color: #6567e6;
+    }
+
+    .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #595aff;
+        --bs-btn-border-color: #6364ff;
+
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #6364ff;
+        --bs-btn-hover-border-color: #6364ff;
+
+        --bs-btn-disabled-bg: #6364ff;
+        --bs-btn-disabled-border-color: #6364ff;
+    }
+
+    .card {
+        --bs-card-border-color: lightgray;
+    }
+
+    .progress {
+        --bs-progress-bg: #ccf;
+        --bs-progress-bar-bg: #7e52aa;
+    }
+
+    .dropdown-menu {
+        --bs-dropdown-link-hover-bg: #595aff;
+        --bs-dropdown-link-hover-color: #fff;
+    }
+
+    .page-link {
+        --bs-pagination-active-bg: #595aff;
+        --bs-pagination-active-border-color: #595aff;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bs-body-color: lightgray;
+        --bs-body-bg: #191b22;
+        --bs-border-color: gray;
+        --bs-primary: #595aff;
+        --bs-secondary-color: gray;
+        --bs-secondary-bg: #393f4f;
+
+        --mention-color: #7b7cff;
+        --account-link-color: #b3b3ff;
+        --verified-bg-color: #236823;
+        --verified-color: #42afe4;
+    }
+
+    .btn-primary {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #595aff;
+        --bs-btn-border-color: #6364ff;
+
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #6364ff;
+        --bs-btn-hover-border-color: #6364ff;
+
+        --bs-btn-disabled-bg: #6364ff;
+        --bs-btn-disabled-border-color: #6364ff;
+    }
+
+    .page-link {
+        --bs-pagination-active-bg: #595aff;
+        --bs-pagination-active-border-color: #595aff;
+    }
+
+    .card {
+        --bs-card-border-color: gray;
+    }
+
+    .progress {
+        --bs-progress-bg: #2c2c62;
+        --bs-progress-bar-bg: #7e52aa;
+    }
+
+    .dropdown-menu {
+        --bs-dropdown-link-hover-bg: #595aff;
+    }
+}
+
+.account-display-big {
+
+}
+
+.account-display-big img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.account-display-big img.profile-pic {
+    width: unset;
+    height: unset;
+    object-fit: unset;
+}
+
+.account-display-big img.profile-pic.big {
+    width: 10em;
+    transform: translateY(-50%);
+    background: var(--bs-body-bg);
+    border: 1px solid var(--bs-card-border-color);
+    border-radius: 5px;
+}
+
+.account-display-big img.profile-pic.small {
+    width: 1.5em;
+}
+
+.col.stat {
+    text-align: center;
+}
+
+.card-body {
+    border-top: 1px;
+    border-bottom: 1px;
+}
+
+.account-display-big a.mention {
+    color: var(--mention-color);
+}
+
+.account-link {
+    color: var(--account-link-color);
+}
+
+.field.verified {
+    background-color: var(--verified-bg-color);
+    border-radius: 10px;
+    padding: .25em;
+    color: white;
+}
+
+.field.verified a {
+    color: var(--verified-color);
+}
+
+a .invisible {
+    display: none;
+}
+
+.field .field-value {
+    margin-left: 2em;
+}
+
+blockquote {
+    background: var(--quote-bg);
+    border-left: 5px solid var(--quote-pre);
+    margin: 0.5em 5px;
+    padding: 1em 5px .25em;
+    quotes: "“" "”" "‘" "’";
+    font-style: italic;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+footer img {
+    height: 1.5em;
+}
+
+footer {
+    font-size: small;
+}

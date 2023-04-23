@@ -1,0 +1,17 @@
+{
+    "scripts": {
+        "test": "npx npm-run-all test-*",
+        "setup": "npx npm-run-all setup-*",
+        "clean": "npx npm-run-all clean-*",
+        "build": "npx npm-run-all build-*",
+        "build-dev": "npx npm-run-all build-dev-*",
+        "watch": "npx npm-run-all watch-*",
+        "test-Frontend": "cd Frontend && npm run test",
+        "setup-Frontend": "cd Frontend && npm run setup",
+        "clean-Frontend": "cd Frontend && npm run clean",
+        "build-Frontend": "cd Frontend && npm run build",
+        "build-dev-Frontend": "cd Frontend && npm run build-dev",
+        "watch-Frontend": "cd Frontend && npm run watch",
+    },
+    "author": "BentiGorlich"
+}

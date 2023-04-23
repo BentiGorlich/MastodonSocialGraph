@@ -1,0 +1,22 @@
+{
+  "name": "mastodon-social-graph/web",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "BentiGorlich",
+      "email": "benjamin_g@posteo.de"
+    }
+  ],
+  "require": {
+    "ext-json": "*",
+    "phpmailer/phpmailer": "^6.4",
+    "ext-dom": "*",
+    "zircote/swagger-php": "^3.1",
+    "ext-pdo": "*",
+    "lrf141/oauth2-mastodon": "^1.0",
+    "league/oauth2-client": "^2.6",
+    "league/commonmark": "^2.4"
+  }
+}

@@ -1,0 +1,22 @@
+# All log files
+*.log
+
+# All data files
+.idea/
+
+# config
+config.php
+
+# libraries
+vendor/
+node_modules/
+
+# cache
+.parcel-cache/
+.phpunit.result.cache
+
+# build files
+dist/
+swaggerdist/
+coverage/
+swagger.json
