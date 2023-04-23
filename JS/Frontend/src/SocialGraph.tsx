@@ -236,6 +236,18 @@ const SocialGraph: React.FC<SocialGraphProps> = props => {
                         if (entry) {
                             entry.amountOfFollows++
                             entry.accountsFollowing.push(selfFollow.find(sf => sf.id == id))
+                            if (!(ffId.avatar.includes("missing.jpg") || ffId.avatar.includes("missing.png")) && (entry.account.avatar.includes("missing.jpg") || entry.account.avatar.includes("missing.png"))) {
+                                entry.account.avatar = ffId.avatar
+                            }
+                            if (!(ffId.avatar_static.includes("missing.jpg") || ffId.avatar_static.includes("missing.png")) && (entry.account.avatar_static.includes("missing.jpg") || entry.account.avatar_static.includes("missing.png"))) {
+                                entry.account.avatar_static = ffId.avatar_static
+                            }
+                            if (!(ffId.header.includes("missing.jpg") || ffId.header.includes("missing.png")) && (entry.account.header.includes("missing.jpg") || entry.account.header.includes("missing.png"))) {
+                                entry.account.header = ffId.header
+                            }
+                            if (!(ffId.header_static.includes("missing.jpg") || ffId.header_static.includes("missing.png")) && (entry.account.header_static.includes("missing.jpg") || entry.account.header_static.includes("missing.png"))) {
+                                entry.account.header_static = ffId.header_static
+                            }
                         } else {
                             tempSocialGraph.push({ account: ffId, amountOfFollows: 1, accountsFollowing: [selfFollow.find(sf => sf.id == id)] })
                         }

@@ -100,10 +100,14 @@
 
 }
 
-.account-display-big img {
+.account-display-big img.header-pic {
     width: 100%;
     height: 250px;
     object-fit: cover;
+}
+
+img.emoji {
+    height: 1em;
 }
 
 .account-display-big img.profile-pic {

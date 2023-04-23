@@ -42,10 +42,10 @@ export interface MastodonSource {
 }
 
 export interface MastodonEmoji {
-    shortCode: string
+    shortcode: string
     url: string
-    staticUrl: string
-    visibleInPicker: string
+    static_url: string
+    visible_in_picker: string
 }
 
 export interface MastodonAccountField {

@@ -20,12 +20,12 @@ const Pagination: React.FC<PaginationProps> = props => {
         <ul className="pagination justify-content-center">
             {page > 2 && <li className="page-item"><button className="page-link" onClick={() => {
                 if (placement == "top")
-                    window.setTimeout(() => window.scrollTo(0, 0), 100)
+                    window.setTimeout(() => window.scrollTo(0, document.body.scrollHeight), 100)
                 setPage(1)
             }} aria-label="First">First</button></li>}
             {page - 1 >= 1 && <li className="page-item"><button className="page-link" onClick={() => {
                 if (placement == "top")
-                    window.setTimeout(() => window.scrollTo(0, 0), 100)
+                    window.setTimeout(() => window.scrollTo(0, document.body.scrollHeight), 100)
                 setPage(page - 1)
             }}>{page - 1}</button></li>}
             <li className="page-item"><button className="page-link active" onClick={() => { }}>{page}</button></li>
