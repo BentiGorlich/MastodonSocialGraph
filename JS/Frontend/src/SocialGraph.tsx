@@ -340,7 +340,7 @@ const SocialGraph: React.FC<SocialGraphProps> = props => {
                 </div>
             </>}
 
-            <Paginator items={socialGraph} renderItem={entry => <div className="col-6" key={`socialGraphEntry_${entry.account.url}`}>
+            <Paginator items={socialGraph} renderItem={entry => <div className="col-lg-6" key={`socialGraphEntry_${entry.account.url}`}>
                 <SocialGraphEntryDislay entry={entry} onClickFollow={onClickFollow} />
             </div>} renderContainer={(children) => <div className="row">{children}</div>} />
         </div>}
