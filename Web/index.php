@@ -21,7 +21,7 @@ include_once "Router.php";
 include_once "vendor/autoload.php";
 spl_autoload_register('ClassLoader');
 
-$GLOBALS['version'] = "0.0.1";
+$GLOBALS['version'] = "0.1.0";
 
 if (!isset($GLOBALS['script']))
     $GLOBALS['script'] = "";
